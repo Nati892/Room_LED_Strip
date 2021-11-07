@@ -1,0 +1,36 @@
+This is the message format.
+you open a socket to the esp8266's ip address and port 80(can be redefined in code), send the message and the esp8266 automaticly closes the socket as s soon as a message is received.
+
+selelct a single colour: A.{Color as letters} R O Y G C B P p M W        	
+
+Select preset pattern: B.{A,B,C..} as letters  (currently only B.A\B.B are defined) 		
+
+Run a snake on the current pattern: C.x.y.zz.ww
+x--{A-C}(Color\preset\custom)     y--Color{as letters}     zz--{00-50),legnth of snake}        ww--{00-99,(speed of snake)}	 (currently only A is C.A is defined)			
+
+set moving pattern speed: D.xx		xx--{00-99}			
+(this one makes the currnet set pattern to move)
+
+set brightness: E.xx
+xx--(00-99)			
+
+off : F        (sets color to Black)							
+
+set snake speed G.xx       xx--{00-99}
+
+set a specific space to be a specifc colour: H.xxx-yyy.z
+xxx,yyy--(000-299),         z--color as letter like the above { R O Y G C B P p M W}
+
+
+explanation:
+C: make snake:
+	A-specific color(one of the above) & length(00-49) & speed(00-99)  exmaple: C.A.R.40.87
+	B-custom preset A-E &speed        example:C.B.(A-E).(A-Z)
+
+
+Todo:
+
+pattens:(B...)
+A is rainbow
+B is Blue-Magenta pattern
+
