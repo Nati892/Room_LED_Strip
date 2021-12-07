@@ -1,4 +1,4 @@
-# Room_LED_Strip
+# Room LED Strip
 In the LEDS folder you will find a single arduino project file.
 The project is unfinshed, and there is a lot more functionality that could be added to it,
 but it is working, and for now without any apparent bugs
